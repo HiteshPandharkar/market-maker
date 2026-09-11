@@ -161,6 +161,12 @@ venv.bak/
 .spyderproject
 .spyproject
 
+# VS Code
+.vscode
+
+# Codex .md files
+synthetic_l3_limit_order_book_simulator.md
+
 # Rope project settings
 .ropeproject
 

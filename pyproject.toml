@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "l3sim"
+version = "0.1.0"
+description = "Synthetic Level 3 limit order book simulator"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "hypothesis>=6"]
+app = ["streamlit>=1.38", "pandas>=2.2", "altair>=5.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
